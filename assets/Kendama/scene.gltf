@@ -1,0 +1,461 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 5050,
+      "max": [
+        0.747848629951477,
+        0.6968461871147156,
+        0.8052380084991455
+      ],
+      "min": [
+        -0.7480705976486206,
+        -0.5748203992843628,
+        -0.8053714036941528
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 60600,
+      "componentType": 5126,
+      "count": 5050,
+      "max": [
+        0.9990991353988647,
+        1.0,
+        0.9999063014984131
+      ],
+      "min": [
+        -0.99909907579422,
+        -1.0,
+        -0.9999063014984131
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 5050,
+      "max": [
+        0.875,
+        0.996642529964447
+      ],
+      "min": [
+        0.125,
+        0.008226593025028706
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 28416,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 121200,
+      "componentType": 5126,
+      "count": 8417,
+      "max": [
+        0.9809166789054871,
+        0.9984227418899536,
+        0.9809167981147766
+      ],
+      "min": [
+        -0.9809169769287109,
+        -0.9381851553916931,
+        -0.9809170961380005
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 222204,
+      "componentType": 5126,
+      "count": 8417,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40400,
+      "componentType": 5126,
+      "count": 8417,
+      "max": [
+        1.0000001192092896,
+        1.0
+      ],
+      "min": [
+        0.0,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 113664,
+      "componentType": 5125,
+      "count": 48960,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 323208,
+      "componentType": 5126,
+      "count": 4310,
+      "max": [
+        1.8372471332550049,
+        2.1889069080352783,
+        2.7217910289764404
+      ],
+      "min": [
+        -1.8372471332550049,
+        -1.4882975816726685,
+        -2.58276629447937
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 374928,
+      "componentType": 5126,
+      "count": 4310,
+      "max": [
+        1.0,
+        0.9999977946281433,
+        1.0
+      ],
+      "min": [
+        -0.9999998211860657,
+        -0.9999989867210388,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 107736,
+      "componentType": 5126,
+      "count": 4310,
+      "max": [
+        0.875,
+        1.0
+      ],
+      "min": [
+        0.13692224025726318,
+        0.0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 309504,
+      "componentType": 5125,
+      "count": 23280,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "mordachia (https://sketchfab.com/mordachia)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/kendama-model-7533d37009dc4d1fa913230e5aca7da8",
+      "title": "Kendama Model"
+    },
+    "generator": "Sketchfab-12.65.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 402624,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 142216,
+      "byteOffset": 402624,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 426648,
+      "byteOffset": 544840,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 971488,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "lambert1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1658535608385266,
+          0.10519781488408098,
+          0.04572397539378245,
+          1.0
+        ],
+        "metallicFactor": 0.056431607172172264,
+        "roughnessFactor": 0.7799722136086435
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Ken_Stick_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ball_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Ken_Cups1_lambert1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "711ad941f7214a13b8804f879c1658f0.fbx"
+    },
+    {
+      "children": [
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        2.155864715576172,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        9.440247535705566,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0621397495269775,
+        0.0,
+        0.0,
+        -2.5725948810577393,
+        0.0,
+        1.0
+      ],
+      "name": "Ken_Stick"
+    },
+    {
+      "mesh": 0,
+      "name": "Ken_Stick_lambert1_0"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        2.2029623985290527,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.2029623985290527,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.2517850399017334,
+        0.0,
+        -0.06497754156589508,
+        3.326437473297119,
+        0.0,
+        1.0
+      ],
+      "name": "Ball"
+    },
+    {
+      "mesh": 1,
+      "name": "Ball_lambert1_0"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -1000.0999755859375,
+        1.9160088300704956,
+        0.9289292097091675,
+        1.0
+      ],
+      "name": "left"
+    },
+    {
+      "name": "Object_8"
+    },
+    {
+      "children": [
+        10
+      ],
+      "matrix": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        -1000.0999755859375,
+        1.0
+      ],
+      "name": "back"
+    },
+    {
+      "name": "Object_10"
+    },
+    {
+      "children": [
+        12
+      ],
+      "name": "Ken_Cups1"
+    },
+    {
+      "mesh": 2,
+      "name": "Ken_Cups1_lambert1_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

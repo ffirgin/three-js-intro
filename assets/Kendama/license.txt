@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kendama Model
+* source:	https://sketchfab.com/3d-models/kendama-model-7533d37009dc4d1fa913230e5aca7da8
+* author:	mordachia (https://sketchfab.com/mordachia)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kendama Model" (https://sketchfab.com/3d-models/kendama-model-7533d37009dc4d1fa913230e5aca7da8) by mordachia (https://sketchfab.com/mordachia) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
