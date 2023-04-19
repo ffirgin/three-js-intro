@@ -2,19 +2,52 @@ import * as THREE from 'three';
 import './style.css';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import gsap from 'gsap';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+let loadedModel
+
+const kendama = new GLTFLoader();
+kendama.load('./assets/Kendama/scene.gltf', (model) => {
+  loadedModel = model;
+
+  model.scene.traverse((child) => {
+    if (child.isMesh) {
+      child.material.color.set(0x403F4C)
+    }
+  })
+
+  scene.add(model.scene)
+  console.log(model)
+
+  //Timeline animation
+  const tl = gsap.timeline({ defaults: { duration: 1 }})
+  tl.fromTo(loadedModel.scene.scale, {z:0, x:0, y:0}, {z:0.9, x:0.9, y:0.9})
+  tl.fromTo('nav', {y: '-100%'}, {y: '0%'})
+  tl.fromTo('h1', {opacity: 0}, {opacity: 1})
+})
+
+const animate = () => {
+  if (loadedModel) {
+    loadedModel.scene.position.set(0, -2, 0)
+
+    //Calculating the color based on current time
+    // const time = Date.now() * 0.001
+    // const hue = (time * 0.05) % 1
+    // const color = new THREE.Color().setHSL(hue, 0.5, 0.5)
+
+    // //Update the color of each mesh in the model
+    // loadedModel.scene.traverse((child) => {
+    //   if (child.isMesh) {
+    //     child.material.color.copy(color)
+    //   }
+    // })
+  }
+  requestAnimationFrame(animate)
+}
+animate();
 
 // Scene Setup
 const scene = new THREE.Scene();
-
-// Creating a sphere
-const geometry = new THREE.SphereGeometry(3, 64, 64)
-const material = new THREE.MeshStandardMaterial({
-    color: '#9368B7',
-    roughness: 0.5,
-})
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-
 
 //Sizes
 const sizes = {
@@ -22,11 +55,10 @@ const sizes = {
     height: window.innerHeight
 }
 
-
 // Creating a light
 const light = new THREE.PointLight(0xffffff, 1, 100)
 light.position.set(0, 10, 10)
-light.intensity = 1.25
+light.intensity = 1.5
 scene.add(light)
 
 // Setting up the Camera
@@ -69,15 +101,6 @@ const loop = () => {
 }
 loop()
 
-// Timeline Animation
-const tl = gsap.timeline({ defaults: { duration: 1 }})
-// Brings in the sphere from 0 to 1
-tl.fromTo(mesh.scale, {z:0, x:0, y:0}, {z:1, x:1, y:1})
-// Brings in the nav from off the screen to the top
-tl.fromTo('nav', {y: '-100%'}, {y: '0%'})
-// Brings in the title using opacity
-tl.fromTo('h1', {opacity: 0}, {opacity: 1})
-
 //Mouse Animation
 let mouseDown = false;
 let rgb = [];
@@ -90,9 +113,13 @@ window.addEventListener('mousemove', (e) => {
       Math.round((e.pageX / sizes.width) * 255),
       Math.round((e.pageY / sizes.height) * 255),
       150,
-    ]
+    ];
     // Animate the colors based off the mouse position
     let newColor = new THREE.Color(`rgb(${rgb.join(",")})`)
-    gsap.to(mesh.material.color, {r: newColor.r, g: newColor.g, b: newColor.b})
+    loadedModel.scene.traverse((child) => {
+      if (child.isMesh) {
+        gsap.to(child.material.color, {r: newColor.r, g: newColor.g, b: newColor.b})
+      }
+    })
   }
 })
