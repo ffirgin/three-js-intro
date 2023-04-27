@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.62.1",
     "vite": "^4.2.0"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
     "gsap": "^3.11.5",
     "three": "^0.150.1"
   }
