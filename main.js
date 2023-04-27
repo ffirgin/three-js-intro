@@ -29,18 +29,6 @@ kendama.load('./assets/Kendama/scene.gltf', (model) => {
 const animate = () => {
   if (loadedModel) {
     loadedModel.scene.position.set(0, -2, 0)
-
-    //Calculating the color based on current time
-    // const time = Date.now() * 0.001
-    // const hue = (time * 0.05) % 1
-    // const color = new THREE.Color().setHSL(hue, 0.5, 0.5)
-
-    // //Update the color of each mesh in the model
-    // loadedModel.scene.traverse((child) => {
-    //   if (child.isMesh) {
-    //     child.material.color.copy(color)
-    //   }
-    // })
   }
   requestAnimationFrame(animate)
 }
