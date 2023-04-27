@@ -13,6 +13,8 @@ npm run dev
 
 This will start Vite and open a locally hosted version of the project.
 
+There is also some fun functionality with clicking and dragging the Kendama. You can select a color by clicking and dragging around the screen.
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
