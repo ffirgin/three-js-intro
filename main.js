@@ -44,13 +44,13 @@ const sizes = {
 }
 
 // Creating a light
-const light = new THREE.PointLight(0xffffff, 1, 100)
-light.position.set(0, 10, 10)
-light.intensity = 1.5
-scene.add(light)
+const light = new THREE.PointLight(0xffffff, 1, 100);
+light.position.set(0, 10, 10);
+light.intensity = 1.5;
+scene.add(light);
 
 // Setting up the Camera
-const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100)
+const camera = new THREE.PerspectiveCamera(45, sizes.width / sizes.height, 0.1, 100);
 camera.position.z = 20;
 scene.add(camera);
 
@@ -59,33 +59,33 @@ scene.add(camera);
 const canvas = document.querySelector('.webgl');
 const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(sizes.width, sizes.height);
-renderer.setPixelRatio(2)
-renderer.render(scene, camera)
+renderer.setPixelRatio(2);
+renderer.render(scene, camera);
 
 // Setting up Controls
-const controls = new OrbitControls(camera, canvas)
-controls.enableDamping = true
-controls.enablePan = false
-controls.enableZoom = false
-controls.autoRotate = true
-controls.autoRotateSpeed = 2.5
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true;
+controls.enablePan = false;
+controls.enableZoom = false;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 2.5;
 
 // Resizing the window
 window.addEventListener('resize', () => {
   // Updating with window sizes
-  sizes.width = window.innerWidth
-  sizes.height = window.innerHeight
+  sizes.width = window.innerWidth;
+  sizes.height = window.innerHeight;
 
   // Updating the camera
-  camera.aspect = sizes.width / sizes.height
-  camera.updateProjectionMatrix()
-  renderer.setSize(sizes.width, sizes.height)
+  camera.aspect = sizes.width / sizes.height;
+  camera.updateProjectionMatrix();
+  renderer.setSize(sizes.width, sizes.height);
 })
 
 const loop = () => {
-  controls.update()
-  renderer.render(scene, camera)
-  window.requestAnimationFrame(loop)
+  controls.update();
+  renderer.render(scene, camera);
+  window.requestAnimationFrame(loop);
 }
 loop()
 
